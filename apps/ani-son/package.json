@@ -1,0 +1,13 @@
+{
+  "name": "@org/ani-son",
+  "version": "0.0.1",
+  "private": true,
+  "nx": {
+    "sourceRoot": "apps/ani-son/src"
+  },
+  "dependencies": {
+    "next": "~16.4.1",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  }
+}

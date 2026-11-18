@@ -2,6 +2,16 @@
 
 **18/11/2026 - Cannot install "@nx/node": "24.0.6"**
 
+The fix is to stop @cacheable packages from being installed at all & pinning `flat-cache` to the version below will fix it.
+
+```json
+"overrides": {
+    "flat-cache": "6.1.13"
+  },
+```
+
+Better long-term: the whole @cacheable scope is blocked, so whoever runs the registry policy (Aikido, maybe) has flagged it deliberately. Ask them why. If it’s a false positive, they can allow it and you can drop the override.
+
 I couldn't install neither `@nx/node` nor `@nx/next` because the Aikido security policy blocks cacheable download.
 
 These are blocked:
