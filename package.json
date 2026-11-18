@@ -1,0 +1,20 @@
+{
+  "name": "@org/source",
+  "version": "0.0.0",
+  "license": "MIT",
+  "scripts": {},
+  "engines": {
+    "node": ">=26.13.1"
+  },
+  "private": true,
+  "dependencies": {},
+  "devDependencies": {
+    "@nx/workspace": "24.0.6",
+    "nx": "24.0.6",
+    "typescript": "~6.0.3"
+  },
+  "packageManager": "npm@12.2.1",
+  "workspaces": [
+    "apps/*"
+  ]
+}
